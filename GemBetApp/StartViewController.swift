@@ -18,7 +18,7 @@ class StartViewController: UIViewController {
   
   /*
    Еще нету динамических ссылок и яндекс метрики, с ними не имел дела, но разберусь
-   Push notifications тоже не делал, может успею до того как посмотрите)
+   Local Push notifications тоже не делал, может успею до того как посмотрите)
    */
   
   private func showAlertController() {
