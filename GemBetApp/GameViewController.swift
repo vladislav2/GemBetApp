@@ -9,13 +9,93 @@ import UIKit
 
 class GameViewController: UIViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var firstLabel: UILabel!
+  @IBOutlet weak var secondLabel: UILabel!
+  @IBOutlet weak var thirdLabel: UILabel!
+  @IBOutlet weak var pointsLabel: UILabel!
+  
+  @IBOutlet weak var playButton: UIButton!
+  
+  private var firstTimer = Timer()
+  private var secondTimer = Timer()
+  private var thirdTimer = Timer()
+  private var stopTimer = Timer()
+  private var time = 0
+  
+  private var points = 100 {
+    didSet {
+      pointsLabel.text = "Очки: \(points)"
+    }
+  }
+  private var valueFirstLabel = 0 {
+    didSet {
+      firstLabel.text = String(valueFirstLabel)
+    }
+  }
+  private var valueSecondLabel = 0 {
+    didSet {
+      secondLabel.text = String(valueSecondLabel)
+    }
+  }
+  private var valueThirdLabel = 0 {
+    didSet {
+      thirdLabel.text = String(valueThirdLabel)
+    }
+  }
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    pointsLabel.text = "Очки: \(points)"
     }
     
+  private func createAndStartTimer() {
+    playButton.isEnabled = false
+    firstTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(editFirstValue), userInfo: nil, repeats: true)
+    secondTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(editSecontValue), userInfo: nil, repeats: true)
+    thirdTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(editThirdValue), userInfo: nil, repeats: true)
+    stopTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(whenStopTimers), userInfo: nil, repeats: true)
+  }
+  
+  private func scoring() {
+    if valueFirstLabel == valueSecondLabel && valueSecondLabel == valueThirdLabel {
+      points += 1000
+      return
+    }
+    if valueThirdLabel == valueSecondLabel || valueThirdLabel == valueFirstLabel || valueSecondLabel == valueFirstLabel {
+      points += 50
+      return
+    }
+  }
+  
+  // MARK: - Selectors
+  
+  @objc func editFirstValue() {
+    valueFirstLabel = Int.random(in: 0..<6)
+  }
+  @objc func editSecontValue() {
+    valueSecondLabel = Int.random(in: 0..<6)
+  }
+  @objc func editThirdValue() {
+    valueThirdLabel = Int.random(in: 0..<6)
+  }
 
+  @objc func whenStopTimers() {
+    time += 1
+    if time == 2 { firstTimer.invalidate() }
+    if time == 3 { secondTimer.invalidate() }
+    if time == 4 {
+      thirdTimer.invalidate()
+      stopTimer.invalidate()
+      time = 0
+      scoring()
+      playButton.isEnabled = true
+    }
+  }
+  @IBAction func playButtonPressed() {
+    points -= 10
+    createAndStartTimer()
+  }
+  
     /*
     // MARK: - Navigation
 

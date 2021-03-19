@@ -3,27 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652075A481C6582DE480275B /* Pods_GemBetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC17E865A64905FBD3EB2B8 /* Pods_GemBetApp.framework */; };
+		CE2BD5692602362700E5554F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BD5682602362700E5554F /* GameViewController.swift */; };
+		CE2BD56C2602363900E5554F /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BD56B2602363900E5554F /* WebViewViewController.swift */; };
+		CE888E4E26036A3D00599578 /* FBLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE888E4D26036A3D00599578 /* FBLogInViewController.swift */; };
 		CEAA393326011E0000C9C66A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA393226011E0000C9C66A /* AppDelegate.swift */; };
 		CEAA393526011E0000C9C66A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA393426011E0000C9C66A /* SceneDelegate.swift */; };
-		CEAA393726011E0000C9C66A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA393626011E0000C9C66A /* ViewController.swift */; };
+		CEAA393726011E0000C9C66A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA393626011E0000C9C66A /* StartViewController.swift */; };
 		CEAA393A26011E0000C9C66A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAA393826011E0000C9C66A /* Main.storyboard */; };
 		CEAA393C26011E0500C9C66A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAA393B26011E0500C9C66A /* Assets.xcassets */; };
 		CEAA393F26011E0500C9C66A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAA393D26011E0500C9C66A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5999EDEF693E6B22D5A90EE2 /* Pods-GemBetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemBetApp.debug.xcconfig"; path = "Target Support Files/Pods-GemBetApp/Pods-GemBetApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC17E865A64905FBD3EB2B8 /* Pods_GemBetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GemBetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2BD5682602362700E5554F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CE2BD56B2602363900E5554F /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		CE888E4D26036A3D00599578 /* FBLogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLogInViewController.swift; sourceTree = "<group>"; };
+		CE888E502603803300599578 /* GemBetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GemBetApp.entitlements; sourceTree = "<group>"; };
 		CEAA392F26011E0000C9C66A /* GemBetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GemBetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAA393226011E0000C9C66A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAA393426011E0000C9C66A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEAA393626011E0000C9C66A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEAA393626011E0000C9C66A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		CEAA393926011E0000C9C66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEAA393B26011E0500C9C66A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAA393E26011E0500C9C66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAA394026011E0500C9C66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E955E848FC8DE19B6E86E54B /* Pods-GemBetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GemBetApp.release.xcconfig"; path = "Target Support Files/Pods-GemBetApp/Pods-GemBetApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +42,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652075A481C6582DE480275B /* Pods_GemBetApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A9E3E6298B761F4A9E53D1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFC17E865A64905FBD3EB2B8 /* Pods_GemBetApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		413BD0F97CD2F72E24FA5A38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5999EDEF693E6B22D5A90EE2 /* Pods-GemBetApp.debug.xcconfig */,
+				E955E848FC8DE19B6E86E54B /* Pods-GemBetApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CEAA392626011E0000C9C66A = {
 			isa = PBXGroup;
 			children = (
 				CEAA393126011E0000C9C66A /* GemBetApp */,
 				CEAA393026011E0000C9C66A /* Products */,
+				413BD0F97CD2F72E24FA5A38 /* Pods */,
+				0A9E3E6298B761F4A9E53D1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +87,14 @@
 		CEAA393126011E0000C9C66A /* GemBetApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE888E502603803300599578 /* GemBetApp.entitlements */,
 				CEAA393226011E0000C9C66A /* AppDelegate.swift */,
 				CEAA393426011E0000C9C66A /* SceneDelegate.swift */,
-				CEAA393626011E0000C9C66A /* ViewController.swift */,
+				CEAA393626011E0000C9C66A /* StartViewController.swift */,
+				CE2BD5682602362700E5554F /* GameViewController.swift */,
+				CE2BD56B2602363900E5554F /* WebViewViewController.swift */,
 				CEAA393826011E0000C9C66A /* Main.storyboard */,
+				CE888E4D26036A3D00599578 /* FBLogInViewController.swift */,
 				CEAA393B26011E0500C9C66A /* Assets.xcassets */,
 				CEAA393D26011E0500C9C66A /* LaunchScreen.storyboard */,
 				CEAA394026011E0500C9C66A /* Info.plist */,
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEAA394326011E0500C9C66A /* Build configuration list for PBXNativeTarget "GemBetApp" */;
 			buildPhases = (
+				32F1A9226357B66EF8A6E9F7 /* [CP] Check Pods Manifest.lock */,
 				CEAA392B26011E0000C9C66A /* Sources */,
 				CEAA392C26011E0000C9C66A /* Frameworks */,
 				CEAA392D26011E0000C9C66A /* Resources */,
+				E3A4597DF1D45E70142986E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +169,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32F1A9226357B66EF8A6E9F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GemBetApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3A4597DF1D45E70142986E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GemBetApp/Pods-GemBetApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GemBetApp/Pods-GemBetApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GemBetApp/Pods-GemBetApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEAA392B26011E0000C9C66A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEAA393726011E0000C9C66A /* ViewController.swift in Sources */,
+				CE2BD56C2602363900E5554F /* WebViewViewController.swift in Sources */,
+				CE2BD5692602362700E5554F /* GameViewController.swift in Sources */,
+				CE888E4E26036A3D00599578 /* FBLogInViewController.swift in Sources */,
+				CEAA393726011E0000C9C66A /* StartViewController.swift in Sources */,
 				CEAA393326011E0000C9C66A /* AppDelegate.swift in Sources */,
 				CEAA393526011E0000C9C66A /* SceneDelegate.swift in Sources */,
 			);
@@ -283,9 +365,11 @@
 		};
 		CEAA394426011E0500C9C66A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5999EDEF693E6B22D5A90EE2 /* Pods-GemBetApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GemBetApp/GemBetApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7HMZCVKND;
 				INFOPLIST_FILE = GemBetApp/Info.plist;
@@ -302,9 +386,11 @@
 		};
 		CEAA394526011E0500C9C66A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E955E848FC8DE19B6E86E54B /* Pods-GemBetApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GemBetApp/GemBetApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7HMZCVKND;
 				INFOPLIST_FILE = GemBetApp/Info.plist;
