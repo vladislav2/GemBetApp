@@ -9,10 +9,12 @@ import UIKit
 import FBSDKLoginKit
 
 class StartViewController: UIViewController {
-
+  
+  private let notificatios = Notifications()
+  private let notificationTitle = "Go to play, regular everyday normal motherfucker"
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     checkLoggedIn()
   }
   
@@ -38,6 +40,10 @@ class StartViewController: UIViewController {
   
   @IBAction func startButtonPressed() {
     showAlertController()
+  }
+  
+  @IBAction func getNotifiButton() {
+    notificatios.scheduleNotification(notificationTitle: notificationTitle)
   }
   
 }

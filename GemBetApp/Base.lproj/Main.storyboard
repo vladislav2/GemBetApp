@@ -35,7 +35,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uu2-bT-4AL">
                                 <rect key="frame" x="147" y="423" width="120" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Ttq-Qy-aM0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Ttq-Qy-aM0"/>
                                     <constraint firstAttribute="height" constant="60" id="gyZ-6f-Fsj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -44,12 +44,26 @@
                                     <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsL-0U-1Ug"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFD-ek-zaJ">
+                                <rect key="frame" x="20" y="803" width="374" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="OJ9-ub-lQv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Get notification"/>
+                                <connections>
+                                    <action selector="getNotifiButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYk-bu-VVJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zFD-ek-zaJ" secondAttribute="bottom" id="14K-0a-O09"/>
                             <constraint firstItem="Uu2-bT-4AL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IgV-O0-KBM"/>
                             <constraint firstItem="Uu2-bT-4AL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ofv-HX-EWN"/>
+                            <constraint firstItem="zFD-ek-zaJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bWI-wD-CZZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zFD-ek-zaJ" secondAttribute="trailing" constant="20" id="cNC-if-t0t"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gIS-QU-2rn"/>
