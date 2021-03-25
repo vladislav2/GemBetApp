@@ -135,7 +135,7 @@
                                             <constraint firstAttribute="width" constant="43" id="dyw-cC-GZn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxA-Co-0RJ">
@@ -144,7 +144,7 @@
                                             <constraint firstAttribute="width" constant="43" id="cRz-wp-BSw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVz-0j-fue">
@@ -153,7 +153,7 @@
                                             <constraint firstAttribute="width" constant="43" id="bGC-da-OhF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -167,8 +167,10 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="57S-5n-5LK"/>
                                     <constraint firstAttribute="height" constant="60" id="gKc-eK-hmS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Play"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="playButtonPressed" destination="C5L-SB-KH8" eventType="touchUpInside" id="htv-yF-bag"/>
                                 </connections>
@@ -179,13 +181,13 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="4hH-JQ-2BA"/>
                                     <constraint firstAttribute="height" constant="50" id="SZV-vG-9oH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vek-PV-iPn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.44475901722926092" green="0.72267607868020312" blue="0.4387293866032973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cbe-CN-Juh" firstAttribute="centerX" secondItem="Vek-PV-iPn" secondAttribute="centerX" id="DTY-eP-uKL"/>
                             <constraint firstItem="oc0-GT-FhJ" firstAttribute="centerX" secondItem="Vek-PV-iPn" secondAttribute="centerX" id="EaE-Jt-bLB"/>

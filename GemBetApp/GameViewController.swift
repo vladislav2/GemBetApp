@@ -92,7 +92,7 @@ class GameViewController: UIViewController {
     }
   }
   @IBAction func playButtonPressed() {
-    points -= 10
+    points -= 20
     createAndStartTimer()
   }
   
