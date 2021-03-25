@@ -11,7 +11,6 @@ import UserNotifications
 class Notifications: NSObject, UNUserNotificationCenterDelegate {
   
   let notificationCenter = UNUserNotificationCenter.current()
-
   
   // user notifi autorization
   func requestAutorization() {

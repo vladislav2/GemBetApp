@@ -8,7 +8,7 @@
 import UIKit
 
 class GameViewController: UIViewController {
-
+  
   @IBOutlet weak var firstLabel: UILabel!
   @IBOutlet weak var secondLabel: UILabel!
   @IBOutlet weak var thirdLabel: UILabel!
@@ -44,10 +44,10 @@ class GameViewController: UIViewController {
   }
   
   override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
     pointsLabel.text = "Очки: \(points)"
-    }
-    
+  }
+  
   private func createAndStartTimer() {
     playButton.isEnabled = false
     firstTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(editFirstValue), userInfo: nil, repeats: true)
@@ -69,17 +69,17 @@ class GameViewController: UIViewController {
   
   // MARK: - Selectors
   
-  @objc func editFirstValue() {
+  @objc private func editFirstValue() {
     valueFirstLabel = Int.random(in: 0..<6)
   }
-  @objc func editSecontValue() {
+  @objc private func editSecontValue() {
     valueSecondLabel = Int.random(in: 0..<6)
   }
-  @objc func editThirdValue() {
+  @objc private func editThirdValue() {
     valueThirdLabel = Int.random(in: 0..<6)
   }
-
-  @objc func whenStopTimers() {
+  
+  @objc private func whenStopTimers() {
     time += 1
     if time == 2 { firstTimer.invalidate() }
     if time == 3 { secondTimer.invalidate() }
@@ -96,14 +96,14 @@ class GameViewController: UIViewController {
     createAndStartTimer()
   }
   
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  /*
+   // MARK: - Navigation
+   
+   // In a storyboard-based application, you will often want to do a little preparation before navigation
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   // Get the new view controller using segue.destination.
+   // Pass the selected object to the new view controller.
+   }
+   */
+  
 }

@@ -9,17 +9,17 @@ import UIKit
 import WebKit
 
 class WebViewViewController: UIViewController {
-
+  
   private let urlString = "https://html5test.com/"
   
   @IBOutlet weak var progressView: UIProgressView!
   @IBOutlet weak var myWebView: WKWebView!
   
   override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
     settingWebView()
   }
-    
+  
   private func settingWebView() {
     guard let url = URL(string: urlString) else { return }
     let request = URLRequest(url: url)
